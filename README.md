@@ -4,6 +4,7 @@ $ ps -e | grep Xorg
 ```
 
 <h2>chack if xrandr is installed</h2>
+
 ```bash
 $ xrandr
 Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 16384 x 16384
