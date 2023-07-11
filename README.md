@@ -1,4 +1,7 @@
 # Linux-Config-Manual
+
+<h2>Display Configuration</h2>
+
 ```bash
 $ ps -e | grep Xorg
 ```
