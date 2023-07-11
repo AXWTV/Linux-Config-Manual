@@ -31,7 +31,7 @@ $ echo "xrandr --output HDMI-1 --mode 1920x1080" >> .profile .xprofile
 
 $ touch /etc/X11/xorg.conf.d/10-monitor.conf
 ```
-vim or nanno it and add
+vim or nano into it and add
 ```bash
 Section "Monitor"
     Identifier    "HDMI1" 
