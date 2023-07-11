@@ -25,7 +25,7 @@ DP-1 disconnected (normal left inverted right x axis y axis)
 
 $ xrandr --output HDMI-1 --mode 1920x1080
 
-$ touch .xprofile .profile
+$ touch .xprofile .profile .xinitrc
 
 $ echo "xrandr --output HDMI-1 --mode 1920x1080" >> .profile .xprofile
 
