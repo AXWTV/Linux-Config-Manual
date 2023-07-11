@@ -42,12 +42,23 @@ Section "Monitor"
 EndSection 
 ```
 <h3>gdm 1920x1080</h3>
+
 ```bash
 sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml 
 ```
 <h3>After doing all that just</h3>
+
 ```bash
 sudo reboot
+```
+<h3>Install</h3>
+
+```bash
+$ sudo <packet_manager> install arandr
+e.g
+   sudo apt install arandr
+   sudo dnf install arandr
+   sudo pacman -Ss arandr
 ```
 
 <h3>Supported</h3>
