@@ -66,3 +66,11 @@ e.g
 
 <h3>Supported</h3>
 <p>Debian, Ubuntu, Fedora, CentOS, ...</p>
+
+# Screen saver
+
+<p>You can disable the screen saver feature with:</p>
+
+```bash
+sudo systemctl mask suspend.target && sudo systemctl mask sleep.target
+```
