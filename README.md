@@ -30,11 +30,13 @@ $ xrandr --output HDMI-1 --mode 1920x1080
 
 $ touch .xprofile .profile .xinitrc
 
-$ echo "xrandr --output HDMI-1 --mode 1920x1080" >> .profile .xprofile
+$ echo "#!/bin/bash" >> .profile .xprofile .xinitric
+$ echo "xrandr --output HDMI-1 --mode 1920x1080" >> .profile .xprofile .xinitric
 
 $ touch /etc/X11/xorg.conf.d/10-monitor.conf
 ```
-vim or nano into it and add
+<p>paste in /etc/X11/xorg.conf.d/10-monitor.conf</p>
+
 ```bash
 Section "Monitor"
     Identifier    "HDMI1" 
@@ -49,6 +51,7 @@ EndSection
 ```bash
 sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml 
 ```
+
 <h3>After doing all that just</h3>
 
 ```bash
@@ -67,10 +70,37 @@ e.g
 <h3>Supported</h3>
 <p>Debian, Ubuntu, Fedora, CentOS, ...</p>
 
-# Screen saver
+<h2>Screen saver</h2>
 
 <p>You can disable the screen saver feature with:</p>
 
 ```bash
 sudo systemctl mask suspend.target && sudo systemctl mask sleep.target
 ```
+
+<h2>GTK - Theme problems</h2>
+
+```bash
+$ touch $HOME/.gtkrc-2.0 $HOME/.config/gtk-3.0/settings.ini
+```
+
+<p>paste in $HOME/.gtkrc-2.0</p>
+
+```bash
+gtk-icon-theme-name = "Adwaita"
+gtk-theme-name = "Adwaita"
+gtk-font-name = "DejaVu Sans 11"
+```
+
+<p>paste in $HOME/.config/gtk-3.0/settings.ini</p>
+
+```bash
+[Settings]
+gtk-icon-theme-name = Adwaita
+gtk-theme-name = Adwaita
+gtk-font-name = DejaVu Sans 11
+gtk-application-prefer-dark-theme = true
+```
+<p>more details in https://wiki.archlinux.org/index.php/GTK#Dark_theme_variant</p>
+
+
