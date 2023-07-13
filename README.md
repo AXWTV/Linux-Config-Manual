@@ -101,6 +101,7 @@ gtk-theme-name = Adwaita
 gtk-font-name = DejaVu Sans 11
 gtk-application-prefer-dark-theme = true
 ```
+<p>other themes https://github.com/catppuccin/gtk</p>
 <p>more details in https://wiki.archlinux.org/index.php/GTK#Dark_theme_variant</p>
 
 
