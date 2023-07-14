@@ -51,6 +51,22 @@ EndSection
 ```bash
 sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml 
 ```
+<p>also add https://linuxreviews.org/HOWTO_fix_screen_tearing#:~:text=Intel%20iGPUs%5B,if%20it%27s%20new.</p>
+
+```bash
+sudo vim /etc/X11/xorg.conf.d/20-intel-gpu.conf
+```
+
+<p>paste this in there</p>
+
+```bsah
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "intel"
+   Option      "TearFree"  "true"
+EndSection
+```
+
 
 <h3>After doing all that just</h3>
 
