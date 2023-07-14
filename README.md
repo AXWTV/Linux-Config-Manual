@@ -69,6 +69,7 @@ e.g
 
 <h3>Supported</h3>
 <p>Debian, Ubuntu, Fedora, CentOS, ...</p>
+<p>or use https://github.com/phillipberndt/autorandr</p>
 
 <h2>Screen saver</h2>
 
