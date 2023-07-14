@@ -51,7 +51,7 @@ EndSection
 ```bash
 sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml 
 ```
-<p>also add https://linuxreviews.org/HOWTO_fix_screen_tearing#:~:text=Intel%20iGPUs%5B,if%20it%27s%20new.</p>
+<p>also add https://linuxreviews.org/HOWTO_fix_screen_tearing#:~:text=Intel%20iGPUs%5B,if%20it%27s%20new. also help full https://askubuntu.com/questions/1347160/screen-tearing-when-using-xrandr-and-x11vnc-on-ubuntu-20-04</p>
 
 ```bash
 sudo vim /etc/X11/xorg.conf.d/20-intel-gpu.conf
