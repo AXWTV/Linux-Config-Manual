@@ -57,7 +57,9 @@ sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml
 sudo vim /etc/X11/xorg.conf.d/20-intel-gpu.conf
 ```
 
-<p>paste this in there</p>
+<p>paste this in there
+to find out the driver use: grep drivers /var/log/Xorg.0.log
+</p>
 
 ```bsah
 Section "Device"
