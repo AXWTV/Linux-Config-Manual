@@ -51,7 +51,7 @@ EndSection
 ```bash
 sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/monitors.xml 
 ```
-<p>also add https://linuxreviews.org/HOWTO_fix_screen_tearing#:~:text=Intel%20iGPUs%5B,if%20it%27s%20new. also help full https://askubuntu.com/questions/1347160/screen-tearing-when-using-xrandr-and-x11vnc-on-ubuntu-20-04</p>
+<p>also add https://linuxreviews.org/HOWTO_fix_screen_tearing#:~:text=Intel%20iGPUs%5B,if%20it%27s%20new. also help full https://askubuntu.com/questions/1347160/screen-tearing-when-using-xrandr-and-x11vnc-on-ubuntu-20-04 , https://christitus.com/fix-screen-tearing-linux/</p>
 
 ```bash
 sudo vim /etc/X11/xorg.conf.d/20-intel-gpu.conf
@@ -65,6 +65,15 @@ to find out the driver use: grep drivers /var/log/Xorg.0.log
 Section "Device"
    Identifier  "Intel Graphics"
    Driver      "intel"
+   Option      "TearFree"  "true"
+EndSection
+
+OR
+
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "modesettings"
+   Option      "TripleBuffer" "true"
    Option      "TearFree"  "true"
 EndSection
 ```
