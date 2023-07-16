@@ -132,4 +132,6 @@ gtk-application-prefer-dark-theme = true
 <p>other themes https://github.com/catppuccin/gtk</p>
 <p>more details in https://wiki.archlinux.org/index.php/GTK#Dark_theme_variant</p>
 
+<h2>How to find a class of an application</h2>
+<p>https://unix.stackexchange.com/questions/96798/i3wm-start-applications-on-specific-workspaces-when-i3-starts#:~:text=%40Lu%C3%ADsdeSousa%20you-,xprop%20%7C%20grep%20CLASS,-in%20terminal%2C%20your</p>
 
